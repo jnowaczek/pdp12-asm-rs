@@ -1,0 +1,17 @@
+name: pdp12asm-rs
+version: "0.1"
+author: Julian Nowaczek <jnowaczek@noreply.users.github.com>
+about: PDP-12 Cross Assembler (Rust)
+args:
+    - strict:
+        short: s
+        long: strict
+        about: Enables strict mode
+    - INPUT:
+        about: Sets the input file to use
+        required: true
+        index: 1
+    - OUTPUT:
+        about: Sets the output file to use, defaults to STOUT
+        required: false
+        index: 2
